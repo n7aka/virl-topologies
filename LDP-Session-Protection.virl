@@ -12,23 +12,19 @@ ip cef distributed
 interface Loopback0
  ip address 2.2.2.2 255.255.255.255
 !
-interface GigabitEthernet0/1.12
+interface GigabitEthernet2.12
  encapsulation dot1q 12
- no ip address
- no shutdown
+ ip address 10.1.2.2 255.255.255.0
 !
-interface GigabitEthernet0/1.23
+interface GigabitEthernet2.23
  encapsulation dot1Q 23
  ip address 20.2.3.2 255.255.255.0
 !
-interface GigabitEthernet0/1.24
+interface GigabitEthernet2.24
  encapsulation dot1Q 24
  ip address 20.2.4.2 255.255.255.0
 !
-interface GigabitEthernet0/1.12
- encapsulation dot1q 12
- ip address 10.1.2.2 255.255.255.0
- no shutdown
+interface GigabitEthernet2
 !
 router ospf 1
  router-id 2.2.2.2
